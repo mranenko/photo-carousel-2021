@@ -1,0 +1,164 @@
+/**
+	Main colors by name
+ */
+/**
+  Main color levels
+ */
+/**
+  Additional neutral colors
+ */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap");
+/*
+  font map by property
+ */
+/*
+  font map accessor function
+ */
+/*
+  font map by element type
+ */
+/**
+  Baseline element properties
+ */
+/**
+  Additional element properties
+ */
+* {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+
+html {
+  background: #f2f5f7;
+  color: #4c4f51;
+  font: 400 10px Source Sans Pro, sans-serif;
+  line-height: 1.4285714286;
+}
+
+body {
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+p {
+  margin: 0 0 1.4rem;
+}
+
+/**
+  Ensure that footer is always positioned at the bottom
+ */
+body {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer,
+.header,
+.main {
+  display: flex;
+}
+
+.footer,
+.header {
+  flex: 0 0;
+}
+
+.main {
+  flex: 1 0;
+}
+
+/**
+  Footer, header, main page sections
+ */
+.footer {
+  background: #4c4f51;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.header {
+  background: #ffffff;
+  color: #4c4f51;
+  padding: 2rem;
+}
+.header .title {
+  line-height: 4rem;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.photos {
+  margin: auto;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
+  font-family: PT Sans, sans-serif;
+  font-weight: 400;
+  line-height: 1.1428571429;
+}
+
+h1, .title {
+  margin: 0 0 1.6rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2, .subtitle {
+  margin: 0 0 1.35rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+  margin: 0 0 1.15rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  margin: 0 0 0.9rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+  margin: 0 0 0.8rem;
+}
+
+/*# sourceMappingURL=app.css.map */

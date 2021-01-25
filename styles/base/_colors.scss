@@ -1,0 +1,101 @@
+$-slate: #6b9abd;
+$-lemon: #f5f38a;
+$-storm: #d2dbe2;
+$-snow: #ffffff;
+
+$-grass: #6bbd94;
+$-plum: #8984c5;
+$-peach: #f5c189;
+$-strawberry: #f58989;
+
+
+/**
+	Main colors by name
+ */
+
+$colors: (
+  primary: $-slate,
+  accent: $-lemon,
+  neutral: $-storm,
+  white: $-snow,
+
+  success: $-grass,
+  info: $-plum,
+  danger: $-strawberry,
+  warning: $-peach,
+);
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+
+/**
+  Main color levels
+ */
+
+$color-primary: (
+  50: color-level(color(primary), 50),
+  100: color-level(color(primary), 100),
+  200: color-level(color(primary), 200),
+  300: color-level(color(primary), 300),
+  400: color-level(color(primary), 400),
+  500: color-level(color(primary), 500),
+  600: color-level(color(primary), 600),
+  700: color-level(color(primary), 700),
+  800: color-level(color(primary), 800),
+  900: color-level(color(primary), 900),
+  light: color-level(color(primary), 50),
+  dark: color-level(color(primary), 700),
+);
+
+$color-accent: (
+  50: color-level(color(accent), 50),
+  100: color-level(color(accent), 100),
+  200: color-level(color(accent), 200),
+  300: color-level(color(accent), 300),
+  400: color-level(color(accent), 400),
+  500: color-level(color(accent), 500),
+  600: color-level(color(accent), 600),
+  700: color-level(color(accent), 700),
+  800: color-level(color(accent), 800),
+  900: color-level(color(accent), 900),
+);
+
+$color-neutral: (
+  50: color-level(color(neutral), 50),
+  100: color-level(color(neutral), 100),
+  200: color-level(color(neutral), 200),
+  300: color-level(color(neutral), 300),
+  400: color-level(color(neutral), 400),
+  500: color-level(color(neutral), 500),
+  600: color-level(color(neutral), 600),
+  700: color-level(color(neutral), 700),
+  800: color-level(color(neutral), 800),
+  900: color-level(color(neutral), 900),
+);
+
+@function color-primary($key) {
+  @return map-get($color-primary, $key);
+}
+
+@function color-accent($key) {
+  @return map-get($color-accent, $key);
+}
+
+@function color-neutral($key) {
+  @return map-get($color-neutral, $key);
+}
+
+
+/**
+  Additional neutral colors
+ */
+
+$colors: map-merge($colors,
+	(
+    black: color-neutral(900),
+    dark: color-neutral(700),
+    light: color-neutral(50),
+	)
+);

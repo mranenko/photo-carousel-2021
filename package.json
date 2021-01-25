@@ -1,0 +1,26 @@
+{
+  "name": "photo-carousel-2021",
+  "version": "0.0.1",
+  "description": "Simple photo carousel.",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch styles",
+    "server": "live-server --port=1234",
+    "start": "npm run sass & npm run server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mranenko/photo-carousel-2021.git"
+  },
+  "author": "Marina Ranenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mranenko/photo-carousel-2021/issues"
+  },
+  "homepage": "https://github.com/mranenko/photo-carousel-2021#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.32.5"
+  }
+}
