@@ -8,12 +8,7 @@
   Additional neutral colors
  */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap");
 /*
   font map by property
  */
@@ -22,12 +17,6 @@
  */
 /*
   font map by element type
- */
-/**
-  Baseline element properties
- */
-/**
-  Additional element properties
  */
 * {
   -webkit-text-size-adjust: 100%;
@@ -114,15 +103,40 @@ body {
   padding: 2rem;
 }
 
-.photos {
-  margin: auto;
-  width: 100%;
+.photo-carousel {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.photo-carousel > .photo {
+  align-items: stretch;
+  cursor: pointer;
+  flex: 0.5;
+  height: 40rem;
+  justify-content: center;
+  margin: 0.5rem;
+  object-fit: cover;
+  overflow: hidden;
+  transition: flex 0.5s;
+  width: 0;
+}
+
+.photo-carousel > .photo.photo-active {
+  flex: 5;
+}
+
+.photo-carousel > .photo > img {
+  height: 40rem;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
 }
 
 h1, h2, h3, h4, h5, h6, .title, .subtitle {
   font-family: PT Sans, sans-serif;
-  font-weight: 400;
-  line-height: 1.1428571429;
+  font-weight: 500;
+  line-height: 1.1111111111;
 }
 
 h1, .title {

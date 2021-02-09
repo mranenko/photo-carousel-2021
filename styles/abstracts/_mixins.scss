@@ -3,15 +3,6 @@
   color: contrast($background, $black, $white);
 }
 
-@mixin position($position: relative, $top: auto, $right: auto, $bottom: auto, $left: auto, $z-index: auto) {
-  position: $position;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-  z-index: $z-index;
-}
-
 @mixin size($width: 100%, $height: $width) {
 	height: $height;
   width: $width;

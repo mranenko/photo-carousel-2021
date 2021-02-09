@@ -1,0 +1,29 @@
+.photo-carousel {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.photo-carousel > .photo {
+  align-items: stretch;
+  cursor: pointer;
+  flex: 0.5;
+  height: 40rem;
+  justify-content: center;
+  margin: .5rem;
+  object-fit: cover;
+  overflow: hidden;
+  transition: flex .5s;
+  width: 0;
+}
+
+.photo-carousel > .photo.photo-active {
+  flex: 5;
+}
+
+.photo-carousel > .photo > img {
+  height: 40rem;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+}

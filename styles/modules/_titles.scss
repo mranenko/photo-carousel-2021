@@ -1,7 +1,7 @@
 h1, h2, h3, h4, h5, h6, .title, .subtitle {
-  font-family: theme(title, font-family);
-  font-weight: theme(title, font-weight);
-  line-height: theme(title, line-height);
+  font-family: font(title, family);
+  font-weight: font(title, weight);
+  line-height: font(title, line-height);
 }
 
 h1, .title {

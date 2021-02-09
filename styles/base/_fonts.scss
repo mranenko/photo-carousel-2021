@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
 
 
 /*
@@ -13,14 +8,8 @@
 
 $font: (
   family: (
-    pt-sans: #{'PT Sans', sans-serif},
-    pt-sans-caption: #{'PT Sans Caption', sans-serif},
-    pt-sans-narrow: #{'PT Sans Narrow', sans-serif},
-    pt-serif: #{'PT Serif', serif},
-    source-code-pro: #{'Source Code Pro', monospace},
-    source-sans-pro: #{'Source Sans Pro', sans-serif},
-    source-serif-pro: #{'Source Serif Pro', serif},
     text: #{'Source Sans Pro', sans-serif},
+    title: #{'PT Sans', sans-serif},
   ),
 
   size: (
@@ -70,5 +59,11 @@ $font: map-merge($font, (
     family: font(family, text),
     line-height: (20/14),
     size: 1.4rem,
+  ),
+
+  title: (
+    family: font(family, title),
+    line-height: (20/18),
+    weight: font(weight, medium),
   ),
 ));
